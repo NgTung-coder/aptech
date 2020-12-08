@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-mail Editor</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    
+    <div id="main">
+       <h1>Compose e-mail message</h1>
+        <a href="" id="tutorial">Help</a>
+        <form action="" method="POST">
+            <label  for="addressee">To:</label> <br>
+            <input class="email-editor" id="addressee" type="text" name="addressee"> <br>
+            <label for="message-sender">From:</label> <br>
+            <input class="email-editor"  id="message-sender" type="text" name="message-sender"> <br>
+            <label for="cc"> Cc:</label> <br>
+            <input class="email-editor" id="cc" type="text"> <br>
+            <label for="subject">Subject :</label> <br>
+            <input  class="email-editor"id="subject" type="text"> <br>
+            <label for="message">Message:</label> <br>
+            <textarea class="email-editor" name="message" id="message" cols="30" rows="10"></textarea> <br>
+           <button><a href="status.html">Submit</a></button>
+            <input type="reset" value="Cancel" name="cancel">
+        </form>
+
+    </div>
+    <div id="help">
+        <h1>E-mail Editor Help</h1>
+        <ul class="list-tutorial">
+            <li>
+                <strong>To and Cc:</strong>
+                <p>To and Cc boxes allow you to enter the e-mail Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem consequuntur ullam molestias dignissimos recusandae velit cumque sit ipsum quas.</p>
+            </li>
+            <li>
+                <strong>Subject</strong>
+                <p>To and Cc boxes allow you to enter the e-mail Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem consequuntur ullam molestias dignissimos recusandae velit cumque sit ipsum quas.</p>
+            </li>
+            <li>
+                <strong>Message</strong>
+                <p>To and Cc boxes allow you to enter the e-mail Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem consequuntur ullam molestias dignissimos recusandae velit cumque sit ipsum quas.</p>
+            </li>
+        </ul>
+        <a href="" id="close">Close</a>
+    </div>
+<script>
+    $(document).ready(function(){
+        $('#tutorial').click(function(){
+            $('#help').css("display","block");
+            return false;
+        })
+        $('#close').click(function(){
+            $('#help').css("display","none");
+            return false;
+        })
+    })
+</script>
+</body>
+
+</html>

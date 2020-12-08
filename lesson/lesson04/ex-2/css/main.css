@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(255, 255, 240);
+    margin-left: 20%;
+}
+
+textarea {
+    overflow-y: scroll;
+    scrollbar-3dlight-color: #C0C0C0;
+    scrollbar-shadow-color: silver;
+    scrollbar-arrow-color: black;
+    scrollbar-face-color: gray;
+}
+
+.imgHelp {
+    cursor: help;
+}
+
+.email-editor {
+    background: #FFFFDD;
+    
+}
+
+#main {
+    width: 400px;
+    background: #DDFFEE;
+    padding: 0px 10px;
+
+}
+
+#help {
+    position: fixed;
+    width: 500px;
+    height: 420px;
+    margin-top: 10px;
+    background: #cfc;
+    padding: 0px 10px;
+    display: none;
+    border: 2px solid #E4E7E7;
+    color: #303030;
+}
+#help h1::before{
+    content: "-:";
+
+}
+#help h1::after{
+    content:":-";
+}
+.close {
+    text-align: right;
+    color: blue;
+    cursor: hand;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    list-style-image: url('');
+}

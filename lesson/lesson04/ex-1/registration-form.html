@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyJobs4You</title>
+</head>
+<body>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .name{
+            margin-left: 50px;
+        }
+        .pass{
+            margin-left:69px ;
+        }
+        .re-pass{
+            margin-left: 10px;
+        }
+        .gd{
+            margin-left: 84px;
+        }
+    </style>
+    <h1>Registration Form -Job Seekers</h1>
+    <form action="thankyou.html" method="POST">
+        <label for="username">Login Name:</label>
+        <input class="name" type="text" name="username" id="username"> <br>
+        <label for="password">Password:</label>
+        <input class="pass" type="password" name="password" id="password"> <br>
+        <label for="re-password">Re-enter Password:</label>
+        <input class="re-pass" type="password" name="password" id="re-password"> <br>
+        <label for="">Gender:</label> 
+        <input class="gd" checked="checked" type="radio" name="gender" value="male" id="male" > 
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label><br>
+        <label for="experience">Experience(In Year):</label> 
+        <select name="select-box" id="experience">
+            <option value="0">Select...</option>
+            <option value="1">0-1</option>
+            <option value="2">1-2</option>
+            <option value="3">2-3</option>
+            <option value="4">3+</option>
+        </select> <br>
+        <button type="submit"><a href="thankyou.html">Register</a></button>
+        <button type="reset" >Cancel</button>
+        
+    </form>
+</body>
+</html>
